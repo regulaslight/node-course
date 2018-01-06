@@ -37,7 +37,7 @@ app.use((req,res,next) => {
 app.get('/' , (req , res) => {
   //res.send('<h1>Hello Express</h1>');
   res.render('home.hbs' , {
-    pageTitle: 'Welcome to the Home Page',
+    pageTitle: 'Welcome to my Home Page',
     //currentYear: new Date().getFullYear()
   });
 
