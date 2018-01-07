@@ -53,6 +53,13 @@ app.get('/about' , (req,res) => {
 
 });
 
+app.get('/projects' , (req,res) =>{
+  res.render('projects.hbs' , {
+    pageTitle: 'My Portfolio'
+  });
+
+});
+
 app.set('view engine' , 'hbs');
 app.use(express.static(__dirname + '/public'));
 
